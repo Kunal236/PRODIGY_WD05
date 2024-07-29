@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <form id="locationForm">
+            <input type="text" id="locationInput" placeholder="Enter city or allow location">
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="weatherInfo" class="hidden">
+            <div class="weather-card">
+                <div class="weather-icon" id="weatherIcon"></div>
+                <div class="weather-details">
+                    <h2 id="cityName"></h2>
+                    <p id="temperature"></p>
+                    <p id="description"></p>
+                </div>
+            </div>
+        </div>
+        <button id="geoLocateBtn">Use Current Location</button>
+        <p id="errorMsg" class="hidden"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
